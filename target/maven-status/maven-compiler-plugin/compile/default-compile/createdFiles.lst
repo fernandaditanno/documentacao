@@ -1,3 +1,7 @@
 io\github\fernandaditanno\documentacao\DocumentacaoApplication.class
 io\github\fernandaditanno\documentacao\ServletInitializer.class
+io\github\fernandaditanno\documentacao\service\DocumentoService.class
+io\github\fernandaditanno\documentacao\domain\enuns\Fase.class
 io\github\fernandaditanno\documentacao\domain\entity\Documento.class
+io\github\fernandaditanno\documentacao\domain\repository\DocumentoRepository.class
+io\github\fernandaditanno\documentacao\controller\DocumentoController.class

@@ -1,11 +1,17 @@
 package io.github.fernandaditanno.documentacao.domain.entity;
 
 import io.github.fernandaditanno.documentacao.domain.enuns.Fase;
-import javax.persistence.*;
+import jakarta.persistence.*;
+import lombok.*;
 import javax.validation.constraints.NotEmpty;
 
 @Entity
+@Table(name = "Documento")
+@Data
+@Setter
+@Getter
 public class Documento {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(unique = true, nullable = false)
