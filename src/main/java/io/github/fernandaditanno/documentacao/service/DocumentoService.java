@@ -2,7 +2,7 @@ package io.github.fernandaditanno.documentacao.service;
 
 import io.github.fernandaditanno.documentacao.domain.entity.Documento;
 import io.github.fernandaditanno.documentacao.domain.enuns.Fase;
-import io.github.fernandaditanno.documentacao.domain.repository.DocumentoRepository;
+import io.github.fernandaditanno.documentacao.domain.repository.Documentos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class DocumentoService {
 
     @Autowired
-    private DocumentoRepository documentoRepository;
+    private Documentos documentoRepository;
 
     public Documento salvar(Documento documento) {
         if (!this.verificarSeExisteDocumento(documento.getSigla(), documento.getFase())){
